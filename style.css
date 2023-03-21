@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Roboto&family=Source+Code+Pro:wght@300&display=swap');
+
+body{
+    background-color: rgb(243, 228, 236);
+    line-height: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 90vh;
+}
+
+section{
+    width: 30rem;
+    height: 90%;
+    /* background-color: black; */
+    
+}
+
+h2{
+    padding-left: 20px;
+}
+
+
+.accordian{
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.icon{
+    padding: 20px;
+    transition: transform 0.2s;
+}
+.active .icon{
+    transform: rotate(-180deg);
+}
+.answer{
+    color: rgb(142, 108, 237);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+.active p{
+    color: brown;
+    /* background-color: rgb(178, 178, 178); */
+}
+
+footer{
+    text-align: center;
+    flex-direction: column;
+    /* padding-bottom: 0; */
+}
